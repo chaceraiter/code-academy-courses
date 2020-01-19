@@ -1,0 +1,5 @@
+def distance_from_zero(fargu):
+  if type(fargu) == int or type(fargu) == float:
+    return abs(fargu)
+  else:
+    return "Nope"
