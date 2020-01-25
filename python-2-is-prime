@@ -1,0 +1,12 @@
+def is_prime(x):
+    divisors = range(2,x,1)
+    if x < 2:
+      return False
+    if x == 2:
+      return True
+    if x > 2:
+      for numbers in divisors:
+        if x % numbers == 0:
+          return False
+      else:
+        return True
