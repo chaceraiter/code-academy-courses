@@ -1,0 +1,5 @@
+def product(listintegers):
+  runningtotal = 1
+  for numbers in listintegers:
+    runningtotal *= numbers
+  return runningtotal
