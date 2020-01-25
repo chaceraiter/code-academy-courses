@@ -1,0 +1,6 @@
+def count(sequence,item):
+  running_count = 0
+  for numbers in sequence:
+    if numbers == item:
+      running_count += 1
+  return running_count
