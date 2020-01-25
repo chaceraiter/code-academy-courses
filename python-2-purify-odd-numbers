@@ -1,0 +1,6 @@
+def purify(listnums):
+  newlist = []
+  for number in listnums:
+    if number % 2 == 0:
+      newlist.append(number)
+  return newlist
