@@ -1,0 +1,6 @@
+def censor(text,word):
+  starred = ""
+  for i in word:
+    starred = starred + "*"
+  newstring = text.replace(word,starred)
+  return newstring
