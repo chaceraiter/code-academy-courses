@@ -1,0 +1,30 @@
+def grades_variance(scores):
+  average2 = grades_average(scores)
+  variance = 0
+  for items in scores:
+    variance += (average2 - items) ** 2
+  variance = float(variance)/len(scores)
+  return variance
+
+def grades_std_deviation(variance):
+  return variance ** 0.5
+
+variance = grades_variance(grades)
+
+print "All of the grades:"
+print_grades(grades)
+print ""
+
+print "Sum of Grades:"
+print grades_sum(grades)
+print ""
+
+print "Average grade:"
+print grades_average(grades)
+print ""
+
+print "Variance:"
+print grades_variance(grades)
+print ""
+
+print grades_std_deviation(variance)
