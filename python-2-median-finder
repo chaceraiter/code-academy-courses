@@ -1,0 +1,17 @@
+def median(inputlist):
+  print inputlist, " input list"
+  listlength = len(inputlist)
+  sortedlist = sorted(inputlist)
+  print listlength, " list length"
+  if listlength % 2 == 0:
+    highmedianindex = int(float(listlength / 2))
+    print highmedianindex, " high median index"
+    lowmedianindex = int(float(listlength / 2)) - 1
+    print lowmedianindex, " low median index"
+    medianvalue = float(sortedlist[highmedianindex] + \
+                   sortedlist[lowmedianindex]) / 2
+  if listlength % 2 == 1:
+    medianindex = int(round(float(listlength) / 2) - 1)
+    print medianindex, " median index"
+    medianvalue = sortedlist[medianindex]
+  return medianvalue
